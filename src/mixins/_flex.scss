@@ -1,0 +1,142 @@
+@mixin display-flex($justify-content, $align-items, $flex-flow) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-flow: $flex-flow;
+}
+
+// Justify-content
+
+@mixin justify-content($justify-content) {
+    @if ($justify-content) {
+        justify-content: $justify-content;
+    }
+}
+
+@mixin display-flex-justify-flex-start($align-items: false, $align-content: false) {
+    display: flex;
+    justify-content: flex-start;
+    @include align-items($align-items);
+    @include align-content($align-content);
+}
+
+@mixin display-flex-justify-flex-end($align-items: false, $align-content: false) {
+    display: flex;
+    justify-content: flex-end;
+    @include align-items($align-items);
+    @include align-content($align-content);
+}
+
+@mixin display-flex-justify-center($align-items: false, $align-content: false) {
+    display: flex;
+    justify-content: center;
+    @include align-items($align-items);
+    @include align-content($align-content);
+}
+
+@mixin display-flex-justify-space-between($align-items: false, $align-content: false) {
+    display: flex;
+    justify-content: space-between;
+    @include align-items($align-items);
+    @include align-content($align-content);
+}
+
+@mixin display-flex-justify-space-around($align-items: false, $align-content: false) {
+    display: flex;
+    justify-content: space-around;
+    @include align-items($align-items);
+    @include align-content($align-content);
+}
+
+// Align-items
+
+@mixin align-items($align-items: false) {
+    @if ($align-items) {
+        align-items: $align-items;
+    }
+}
+
+@mixin display-flex-align-items-stretch($justify-content: false, $align-items: false) {
+    display: flex;
+    align-items: stretch;
+    @include justify-content($justify-content);
+    @include align-content($align-content);
+}
+
+@mixin display-flex-align-items-flex-start($justify-content: false, $align-content: false) {
+    display: flex;
+    align-items: flex-start;
+    @include justify-content($justify-content);
+    @include align-content($align-content);
+}
+
+@mixin display-flex-align-items-flex-end($justify-content: false, $align-content: false) {
+    display: flex;
+    align-items: flex-end;
+    @include justify-content($justify-content);
+    @include align-content($align-content);
+}
+
+@mixin display-flex-align-items-center($justify-content: false, $align-content: false) {
+    display: flex;
+    align-items: center;
+    @include justify-content($justify-content);
+    @include align-content($align-content);
+}
+
+@mixin display-flex-align-items-baseline($justify-content: false, $align-content: false) {
+    display: flex;
+    align-items: baseline;
+    @include justify-content($justify-content);
+    @include align-content($align-content);
+}
+
+// Align-content
+
+@mixin align-content($align-content: false) {
+    @if ($align-content) {
+        align-content: $align-content;
+    }
+}
+
+@mixin display-flex-align-content-stretch($justify-content: false, $align-items: false) {
+    display: flex;
+    align-content: stretch;
+    @include justify-content($justify-content);
+    @include align-content($align-items);
+}
+
+@mixin display-flex-align-content-flex-start($justify-content: false, $align-items: false) {
+    display: flex;
+    align-content: flex-start;
+    @include justify-content($justify-content);
+    @include align-content($align-items);
+}
+
+@mixin display-flex-align-content-flex-end($justify-content: false, $align-items: false) {
+    display: flex;
+    align-content: flex-end;
+    @include justify-content($justify-content);
+    @include align-content($align-items);
+}
+
+@mixin display-flex-align-content-center($justify-content: false, $align-items: false) {
+    display: flex;
+    align-content: center;
+    @include justify-content($justify-content);
+    @include align-content($align-items);
+}
+
+@mixin display-flex-align-content-space-between($justify-content: false, $align-items: false) {
+    display: flex;
+    align-content: space-between;
+    @include justify-content($justify-content);
+    @include align-content($align-items);
+}
+
+@mixin display-flex-align-content-space-around($justify-content: false, $align-items: false) {
+    display: flex;
+    align-content: space-around;
+    @include justify-content($justify-content);
+    @include align-content($align-items);
+}
