@@ -1,0 +1,28 @@
+{
+  "name": "scss-edubrg-package",
+  "version": "0.0.1",
+  "description": "scss style pack",
+  "main": "main.scss",
+  "scripts": {
+    "build": "sass main.scss dist/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edubrg/scss-edubrg-package.git"
+  },
+  "keywords": [
+    "scss",
+    "style",
+    "package",
+    "edubrg"
+  ],
+  "author": "Eduardo Vidal Borges",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edubrg/scss-edubrg-package/issues"
+  },
+  "homepage": "https://github.com/edubrg/scss-edubrg-package#readme",
+  "devDependencies": {
+    "sass": "^1.60.0"
+  }
+}
