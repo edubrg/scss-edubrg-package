@@ -3,7 +3,7 @@
 	transition: opacity $duracao $efeito;
 }
 
-@mixin left-transition($duracao, $efeito, $left, $position: false) {
+@mixin left-transition($left, $duracao, $efeito, $position: false) {
 	@if $position {
 		position: $position;
 	}
@@ -11,7 +11,7 @@
 	transition: left $duracao $efeito;
 }
 
-@mixin top-transition($duracao, $efeito, $top, $position: false) {
+@mixin top-transition($top, $duracao, $efeito, $position: false) {
 	@if $position {
 		position: $position;
 	}
@@ -19,7 +19,7 @@
 	transition: top $duracao $efeito;
 }
 
-@mixin right-transition($duracao, $efeito, $right, $position: false) {
+@mixin right-transition($right, $duracao, $efeito, $position: false) {
 	@if $position {
 		position: $position;
 	}
@@ -27,7 +27,7 @@
 	transition: right $duracao $efeito;
 }
 
-@mixin bottom-transition($duracao, $efeito, $bottom, $position: false) {
+@mixin bottom-transition($bottom, $duracao, $efeito, $position: false) {
 	@if $position {
 		position: $position;
 	}
