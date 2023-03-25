@@ -1,0 +1,42 @@
+@mixin opacity-transition($duracao, $efeito) {
+	opacity: 0;
+	transition: opacity $duracao $efeito;
+}
+
+@mixin left-transition($left, $duracao, $efeito, $position: false) {
+	@if $position {
+		position: $position;
+	}
+	left: $left;
+	transition: left $duracao $efeito;
+}
+
+@mixin top-transition($top, $duracao, $efeito, $position: false) {
+	@if $position {
+		position: $position;
+	}
+	top: $top;
+	transition: top $duracao $efeito;
+}
+
+@mixin right-transition($right, $duracao, $efeito, $position: false) {
+	@if $position {
+		position: $position;
+	}
+	right: $right;
+	transition: right $duracao $efeito;
+}
+
+@mixin bottom-transition($bottom, $duracao, $efeito, $position: false) {
+	@if $position {
+		position: $position;
+	}
+	bottom: $bottom;
+	transition: bottom $duracao $efeito;
+}
+
+@mixin position-transition($duracao, $efeito, $posicao, $x, $y) {
+	position: $posicao;
+	transform: translateX($x) translateY($y);
+	transition: transform $duracao $efeito;
+}
