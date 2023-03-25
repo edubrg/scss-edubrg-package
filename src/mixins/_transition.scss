@@ -34,3 +34,9 @@
 	bottom: $bottom;
 	transition: bottom $duracao $efeito;
 }
+
+@mixin position-transition($duracao, $efeito, $posicao, $x, $y) {
+	position: $posicao;
+	transform: translateX($x) translateY($y);
+	transition: transform $duracao $efeito;
+}
