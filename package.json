@@ -18,6 +18,7 @@
   ],
   "author": "Eduardo Vidal Borges",
   "license": "ISC",
+  "typings": "scss-edubrg-package.d.ts",
   "bugs": {
     "url": "https://github.com/edubrg/scss-edubrg-package/issues"
   },
