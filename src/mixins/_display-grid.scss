@@ -1,0 +1,64 @@
+@mixin display-grid(
+	$justify-content,
+	$align-items,
+	$template-columns: false,
+	$auto-columns: false,
+	$template-row: false,
+	$auto-rows: false,
+	$gap: false,
+	$gap-columns: false,
+	$gap-row: false
+) {
+	display: grid;
+	align-items: $align-items;
+	justify-content: $justify-content;
+
+	@include grid-template-columns($template-columns);
+	@include grid-auto-columns($auto-columns);
+
+	@include grid-template-rows($template-row);
+	@include grid-row-gap($gap-row);
+
+	@if ($gap) {
+		gap: $gap;
+	} @else {
+		@include grid-columns-gap($gap-columns);
+		@include grid-auto-rows($auto-rows);
+	}
+}
+
+@mixin grid-template-columns($template-columns) {
+	@if ($template-columns) {
+		grid-template-columns: $template-columns;
+	}
+}
+
+@mixin grid-auto-columns($auto-columns) {
+	@if ($auto-columns) {
+		grid-auto-columns: $auto-columns;
+	}
+}
+
+@mixin grid-columns-gap($gap) {
+	@if ($gap) {
+		grid-column-gap: $gap;
+	}
+}
+
+@mixin grid-template-rows($template-rows) {
+	@if ($template-rows) {
+		grid-template-rows: $template-rows;
+	}
+}
+
+@mixin grid-auto-rows($auto-rows) {
+	@if ($auto-rows) {
+		grid-auto-rows: $auto-rows;
+	}
+}
+
+@mixin grid-row-gap($gap) {
+	@if ($gap) {
+		grid-row-gap: $gap;
+	}
+}
