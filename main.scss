@@ -1,7 +1,6 @@
-@import 'src/utilities/variables';
 @import 'src/utilities/functions';
 @import 'src/mixins/breakpoints';
+@import 'src/mixins/display-flex';
+@import 'src/mixins/display-grid';
 @import 'src/mixins/grid';
 @import 'src/mixins/transition';
-@import 'src/base/reset';
-@import 'src/base/typography';

@@ -1,0 +1,21 @@
+@function convert-to($value, $to-unit) {
+	@return $value * ($to-unit / $to-unit);
+}
+
+@function contrast-color($color) {
+	$lightness: lightness($color);
+
+	@if $lightness > 50 {
+		@return black;
+	} @else {
+		@return white;
+	}
+}
+
+@function tint-or-shade($color, $percentage) {
+	@if (lightness($color) > 50) {
+		@return darken($color, $percentage);
+	} @else {
+		@return lighten($color, $percentage);
+	}
+}
