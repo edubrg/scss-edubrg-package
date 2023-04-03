@@ -1,6 +1,6 @@
 {
   "name": "scss-edubrg-package",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "scss style pack",
   "main": "main.scss",
   "scripts": {
