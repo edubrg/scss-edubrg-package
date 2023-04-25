@@ -7,7 +7,7 @@
 
 @mixin gap($gap) {
 	@if ($gap) {
-		grid: $gap;
+		gap: $gap;
 	}
 }
 
