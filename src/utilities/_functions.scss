@@ -1,16 +1,11 @@
-@function convert-to($value, $to-unit) {
-	$conversion-factors: (
-		"px-to-rem": 1 / 16,
-		"rem-to-px": 16,
-	);
+@function px-to-rem($value) {
+	$conversion-factor: 1 / 16;
+	@return $value * $conversion-factor * 1rem;
+}
 
-	$conversion-factor: map-get($conversion-factors, $to-unit);
-
-	@if $conversion-factor {
-		@return $value * $conversion-factor;
-	} @else {
-		@error "Invalid unit conversion.";
-	}
+@function rem-to-px($value) {
+	$conversion-factor: 16;
+	@return $value * $conversion-factor * 1px;
 }
 
 @function contrast-color($color) {
